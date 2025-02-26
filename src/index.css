@@ -1,0 +1,167 @@
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #121212;
+  padding: 20px;
+}
+
+.no-element{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.element-container {
+  padding: 30px;
+  width: 500px;
+  height: 600px;
+  font-family: Arial, sans-serif;
+  background-color: #1e1e2f;
+  border-radius: 15px;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.4);
+  border: 2px solid #333;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.element-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.element-input input {
+  flex: 1;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #444;
+  background-color: #2d2d44;
+  color: #fff;
+  outline: none;
+  font-size: 16px;
+}
+
+.element-input button {
+  padding: 14px 20px;
+  border-radius: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+  font-size: 16px;
+}
+
+.element-list {
+  list-style: none;
+  padding: 0;
+  flex: 1;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #4caf50 #2d2d44;
+  padding-right: 10px;
+}
+
+.element-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px;
+  border-radius: 10px;
+  background-color: #2d2d44;
+  border: 1px solid #444;
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 16px;
+  transition: 0.3s;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.element-item button {
+  padding: 8px 12px;
+  border-radius: 8px;
+  background-color: #e63946;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+ul::-webkit-scrollbar {
+  width: 10px;
+}
+
+ul::-webkit-scrollbar-track {
+  background: #2d2d44;
+  border-radius: 10px;
+}
+
+ul::-webkit-scrollbar-thumb {
+  background-color: #4caf50;
+  border-radius: 10px;
+  border: 3px solid #2d2d44;
+}
+
+@media (max-width: 768px) {
+  .element-container {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .element-input input {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .element-input button {
+    padding: 12px 18px;
+    font-size: 14px;
+  }
+
+  .element-item {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .element-item button {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .element-container {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .element-input input {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .element-input button {
+    padding: 10px 16px;
+    font-size: 12px;
+  }
+
+  .element-item {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .element-item button {
+    padding: 5px 8px;
+    font-size: 10px;
+  }
+}
